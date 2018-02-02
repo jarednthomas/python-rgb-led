@@ -1,9 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 """
 rgb_led.py
 ~~~~~~~~
 
-Python based script that cycles through RGB Colors on an LED using the Raspberry Pi
+Python based script that cycles through RGB Colors using a Raspberry Pi
 """
 
 import os
