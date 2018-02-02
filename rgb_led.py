@@ -6,9 +6,8 @@ rgb_led.py
 Python based script that cycles through RGB Colors using a Raspberry Pi
 """
 
-import os
-import time
 import RPi.GPIO as GPIO
+from time import sleep
 from datetime import datetime
 
 # Pins (BCM) https://pinout.xyz/
@@ -92,7 +91,7 @@ try:
     print("[RGB_LED Active] CTRL-C to Quit")
     GPIO.add_event_detect(button_pin, GPIO.BOTH, callback=buttonStateChanged)
     while True:
-        time.sleep(1) # sleep to reduce CPU usage
+        sleep(1) # sleep to reduce CPU usage
 
 except KeyboardInterrupt:
     print("\n")
